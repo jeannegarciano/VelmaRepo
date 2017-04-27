@@ -1,0 +1,235 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thesis.velma.ShowEventDetails"
+    tools:showIn="@layout/activity_show_event_details">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imgTitle"
+            android:src="@drawable/textdocument"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTitle"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgTitle"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="Event name"
+            android:layout_marginTop="10dp"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imgDesc"
+            android:layout_below="@+id/imgTitle"
+            android:src="@drawable/textdocument"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDesc"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgDesc"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="This is a description."
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/calendaricon"
+            android:layout_below="@+id/imgDesc"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/startdate"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start date"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:editable="false"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/imgDate"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgDate"/>
+
+        <TextView
+            android:id="@+id/enddate"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End date"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/startdate"
+            android:layout_toEndOf="@+id/startdate"
+            android:editable="false"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/timetimetime"
+            android:layout_below="@+id/imgDate"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:id="@+id/starttime"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start time"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imgTime"
+            android:editable="false"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgTime"/>
+
+
+        <TextView
+            android:id="@+id/endtime"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End time"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/enddate"
+            android:layout_alignLeft="@+id/enddate"
+            android:layout_alignStart="@+id/enddate"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:textSize="20dp"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/dash"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/imgDate"-->
+        <!--android:layout_toRightOf="@+id/sDate"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="to"/>-->
+
+        <ImageView
+            android:id="@+id/imgLoc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/placeholder"
+            android:layout_below="@+id/imgTime"
+            android:layout_marginTop="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgLoc"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgLoc"/>
+
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place_autocomplete_fragment"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:text="Magallanes St Cebu City 6000 Cebu Philippines"/>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgAlarm"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:src="@drawable/bell"-->
+        <!--android:layout_below="@+id/imgLoc"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/ringAlarm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/imgAlarm"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_toRightOf="@+id/imgAlarm"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="Alarm every..."/>-->
+
+        <ImageView
+            android:id="@+id/imgFriends"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/friends"
+            android:layout_below="@+id/imgLoc"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgFriends"
+            android:layout_below="@+id/loc"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:text="cathlynjaneamodia@gmail.com"/>
+
+        <Button
+            android:id="@+id/invitepeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to invite people"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgTime"
+            android:layout_below="@+id/imgFriends"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

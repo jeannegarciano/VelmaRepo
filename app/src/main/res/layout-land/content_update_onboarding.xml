@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/relativeEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/eName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Event name"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/eventname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/addevent"
+                        android:inputType="textShortMessage"
+                        android:paddingTop="40dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp"
+                        android:layout_below="@+id/eName"/>
+
+
+
+                <TextView
+                    android:id="@+id/eventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/endtime"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Description"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventName"
+                    android:layout_marginTop="10dp"
+                    android:editable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/name"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Location"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locationText"
+                    android:layout_marginTop="5dp"
+                    android:editable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/distanceduration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location"
+                    android:layout_marginTop="5dp"
+                    android:editable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:visibility="gone"
+
+                    />
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/relativeEvent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+
+                <Button
+                    android:id="@+id/btnAddEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:text="Update Event"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/navigation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                app:stl_dividerThickness="0dp"
+                app:stl_indicatorColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

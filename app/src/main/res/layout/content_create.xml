@@ -1,0 +1,213 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thesis.velma.ShowEventDetails"
+    tools:showIn="@layout/activity_show_event_details">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imgDesc"
+            android:src="@drawable/textdocument"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDesc"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgDesc"
+            android:layout_marginRight="20dp"
+            android:textSize="16dp"
+            android:hint="Input description here"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/calendaricon"
+            android:layout_below="@+id/imgDesc"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/sDate"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDate"
+            android:layout_toRightOf="@+id/imgDate"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:hint="Start date"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:inputType="none"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/dashDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDate"
+            android:layout_toRightOf="@+id/sDate"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:text="-"
+            />
+
+
+        <EditText
+            android:id="@+id/eDate"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dashDate"
+            android:layout_marginRight="20dp"
+            android:textSize="16dp"
+            android:layout_alignBottom="@+id/imgDate"
+            android:hint="End date"
+            android:editable="false"
+            android:inputType="none"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/timetimetime"
+            android:layout_below="@+id/imgDate"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/sTime"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/imgTime"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:hint="Start time"
+            android:editable="false"
+            android:inputType="none"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/dashTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/sTime"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:text="-"
+            />
+
+        <EditText
+            android:id="@+id/eTime"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/dashTime"
+            android:layout_marginRight="20dp"
+            android:textSize="16dp"
+            android:hint="End time"
+            android:editable="false"
+            android:inputType="none"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:gravity="center"
+            />
+
+        <CheckBox
+            android:id="@+id/checkAllDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sTime"
+            android:text="All day"
+            android:layout_below="@id/sTime"/>
+
+        <ImageView
+            android:id="@+id/imgLoc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/placeholder"
+            android:layout_below="@+id/imgTime"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgLoc"
+            android:layout_below="@+id/imgLoc"
+            android:layout_alignStart="@+id/stime"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/loc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/place_autocomplete_fragment"
+            android:textSize="16dp"
+            android:text=""
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_alignLeft="@+id/place_autocomplete_fragment"
+            android:layout_marginRight="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgFriends"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/friends"
+            android:layout_below="@+id/loc"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <EditText
+            android:id="@+id/friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addFriends"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16dp"
+            android:text="Click to select friends"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_alignLeft="@+id/place_autocomplete_fragment"
+            />
+
+        <Button
+            android:id="@+id/addFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invite friends"
+            android:layout_below="@+id/imgFriends"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

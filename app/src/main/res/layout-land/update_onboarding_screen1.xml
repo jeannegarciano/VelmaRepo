@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/fragment_screen1"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/endtime"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventName"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:editable="true"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Location"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationText"
+        android:layout_marginTop="5dp"
+        android:editable="true"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+    <TextView
+        android:id="@+id/distanceduration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:editable="true"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/mode_array"
+        android:visibility="gone">
+
+    </Spinner>
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

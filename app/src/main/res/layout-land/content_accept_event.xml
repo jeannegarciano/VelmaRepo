@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_accept_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thesis.velma.acceptEvent"
+    tools:showIn="@layout/activity_accept_event">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="You accepted the Event."
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Event: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventName"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="name"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/eventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/name"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Description: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/eventDescription1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/eventDescription"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Description Text"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/sdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/eventDescription1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Start date: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sdate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sdate"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Sdate "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/edate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sdate1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="End date: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/edate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edate"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Edate "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edate1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Start time: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/stime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/stime"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Stime "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/etime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/stime1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="End time: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/etime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etime"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Etime "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etime1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Invited: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/friends1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/friends"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="friends "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/friends1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Location:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/location1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/location"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="location"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/userIdText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/location1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="User Id: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/userIdText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/userIdText"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="location"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/eventId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/userIdText1"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Event Id: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/eventId1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/eventId"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="location"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/acceptEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/location1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Save event"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

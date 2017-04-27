@@ -1,0 +1,181 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thesis.velma.ShowEventDetails"
+    tools:showIn="@layout/activity_show_event_details">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imgDesc"
+            android:src="@drawable/textdocument"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDesc"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgDesc"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:text="This is a description."/>
+
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/calendaricon"
+            android:layout_below="@+id/imgDesc"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/sDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDate"
+            android:layout_toRightOf="@+id/imgDate"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:text="0000-00-00"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/dash"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/imgDate"-->
+        <!--android:layout_toRightOf="@+id/sDate"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="to"/>-->
+
+        <TextView
+            android:id="@+id/eDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sDate"
+            android:layout_toRightOf="@+id/imgDate"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:text="0000-00-00"/>
+
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/timetimetime"
+            android:layout_below="@+id/imgDate"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/sTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/imgTime"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:text="00:00:00"/>
+
+        <TextView
+            android:id="@+id/dashTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/sTime"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/eTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTime"
+            android:layout_toRightOf="@+id/dashTime"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:text="00:00:00"/>
+
+        <ImageView
+            android:id="@+id/imgLoc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/placeholder"
+            android:layout_below="@+id/imgTime"
+            android:layout_marginTop="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgLoc"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imgLoc"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:text="Magallanes St Cebu City 6000 Cebu Philippines"/>
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgAlarm"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:src="@drawable/bell"-->
+        <!--android:layout_below="@+id/imgLoc"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/ringAlarm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/imgAlarm"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_toRightOf="@+id/imgAlarm"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="Alarm every..."/>-->
+
+        <ImageView
+            android:id="@+id/imgFriends"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/friends"
+            android:layout_below="@+id/imgLoc"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgFriends"
+            android:layout_below="@+id/loc"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:text=""/>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--android:background="#146dc7">-->
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/watchicon"
+        android:layout_marginTop="65dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/gifone"-->
+        <!--/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Determines time conflict"
+        android:id="@+id/welcometxt"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        tools:textColor="#a2a4a6"
+        android:textSize="24sp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Manage your time in a smart way."-->
+        <!--android:id="@+id/intro"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:layout_below="@+id/welcometxt"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>

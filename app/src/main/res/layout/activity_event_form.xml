@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:elevation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/relativeEvent"
+            android:background="@color/colorPrimary"
+            >
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:theme="@style/AppTheme">
+            <EditText
+                android:id="@+id/eventname"
+                android:textSize="35sp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addevent"
+                android:textColorHint="@color/white"
+                android:inputType="textShortMessage"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <!--android:layout_toRightOf="@+id/image_event"-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/event"-->
+            <!--android:id="@+id/image_event"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingTop="26dp"-->
+           <!--/>-->
+
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeDate"
+        android:layout_below="@+id/relativeEvent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date"
+            android:id="@+id/image_startdate"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:tint="@color/gray"/>
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/input_time"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/blue">-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <EditText
+            android:id="@+id/endtime"
+            android:textSize="20sp"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_endtime"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/enddate"
+            android:layout_alignLeft="@+id/enddate"
+            android:layout_alignStart="@+id/enddate"
+            android:layout_marginTop="0dp"
+            android:editable="false"
+            android:gravity="center_horizontal" />
+
+            <!--<AutoCompleteTextView-->
+                <!--android:id="@+id/location"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:layout_below="@+id/starttime"-->
+                <!--android:layout_toRightOf="@+id/image_location"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textColor="@color/colorPrimary"/>-->
+
+        <EditText
+        android:id="@+id/location"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/starttime"
+        android:layout_toRightOf="@+id/image_location"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/location"
+    android:id="@+id/image_location"
+    android:layout_alignTop="@+id/location"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:tint="@color/gray"/>
+
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/alarm"-->
+        <!--android:textSize="20sp"-->
+        <!--android:shadowColor="@color/colorPrimary"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:hint="@string/alarm_every"-->
+        <!--android:layout_below="@+id/location"-->
+        <!--android:layout_toRightOf="@+id/image_alarm"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:editable="false"-->
+        <!--android:paddingLeft="10dp"/>-->
+
+<!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/alarm"-->
+    <!--android:id="@+id/image_alarm"-->
+    <!--android:layout_alignTop="@+id/alarm"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_below="@+id/image_location"-->
+    <!--android:tint="@color/gray"/>-->
+
+
+
+<EditText
+    android:id="@+id/invitepeople"
+    android:textSize="20sp"
+    android:shadowColor="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_below="@+id/location"
+    android:layout_toRightOf="@+id/image_invitepeople"
+    android:layout_marginTop="0dp"
+    android:paddingLeft="10dp"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/people"
+    android:id="@+id/image_invitepeople"
+    android:layout_alignTop="@+id/invitepeople"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/image_location"
+    android:tint="@color/gray"/>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/submit_event"
+    android:id="@+id/sumbitevent"
+    android:background="@color/colorPrimary"
+    android:onClick="submiteventclick"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:layout_below="@+id/invitepeople"
+    android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/starttime"
+            android:textSize="20sp"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_starttime"
+            android:textColor="@color/colorPrimary"
+            android:editable="false"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/startdate"
+            android:layout_alignLeft="@+id/startdate"
+            android:layout_alignStart="@+id/startdate" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:textSize="20sp"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_startdate"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:editable="false"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/image_startdate"
+            android:layout_toRightOf="@+id/image_startdate"
+            android:layout_toEndOf="@+id/image_startdate"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp" />
+
+        <EditText
+            android:id="@+id/enddate"
+            android:textSize="20sp"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_enddate"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:editable="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_above="@+id/starttime"
+            android:layout_toRightOf="@+id/starttime"
+            android:layout_toEndOf="@+id/starttime" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

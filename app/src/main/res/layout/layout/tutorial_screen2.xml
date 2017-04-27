@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2296f4">
+    <!--android:background="#2296f4">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=" there is a conflict."-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:layout_below="@+id/textView3"-->
+        <!--android:layout_alignLeft="@+id/textView3"-->
+        <!--android:layout_alignStart="@+id/textView3"-->
+        <!--android:paddingTop="5dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vacant time whenever there's conflict"
+        android:id="@+id/intro"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="schedules. It suggests you favorable"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/welcometxt"
+        android:layout_alignLeft="@+id/welcometxt"
+        android:layout_alignStart="@+id/welcometxt"
+        android:layout_marginTop="5dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helps you dynamically manage your"
+        android:id="@+id/welcometxt"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/holding"
+        android:layout_marginTop="30dp" />
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="num.app.gpluslogin.MainActivity">
+
+        <item android:id="@+id/action_save"
+            android:title="@string/action_save"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_check_white_18dp"
+            app:showAsAction="always"/>
+        <item android:id="@+id/action_edit"
+            android:title="@string/action_today"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_edit_white_18dp"
+            app:showAsAction="always"/>
+
+</menu>

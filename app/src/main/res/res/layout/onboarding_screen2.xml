@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        android:textSize="20dp"
+        android:id="@+id/dateAndTime"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="left"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/startdate"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_startdate"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:editable="false"
+            android:layout_marginRight="10dp"/>
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/date"-->
+        <!--android:id="@+id/image_startdate"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:tint="@color/gray"-->
+        <!--/>-->
+
+        <TextView
+            android:id="@+id/enddate"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_enddate"
+            android:inputType="none"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/startdate"
+            android:layout_toEndOf="@+id/startdate"
+            android:editable="false"
+            />
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/input_time"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColorHint="@color/blue">-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <TextView
+            android:id="@+id/starttime"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_starttime"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/enddate"
+            android:layout_toRightOf="@+id/image_startdate"
+            android:editable="false"
+            />
+
+
+        <TextView
+            android:id="@+id/endtime"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_endtime"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/enddate"
+            android:layout_alignLeft="@+id/enddate"
+            android:layout_alignStart="@+id/enddate"
+            android:layout_marginTop="5dp"
+            android:editable="false" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Notification"
+        android:textSize="20dp"
+        android:id="@+id/alarmNotification"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/alarm"
+        android:shadowColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:hint="@string/alarm_every"
+        android:layout_below="@+id/alarmNotification"
+        android:layout_marginTop="5dp"
+        android:editable="false"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:src="@drawable/velma"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="61dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Welcome to Velma"-->
+        <!--android:id="@+id/welcometxt"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/abc_primary_text_disable_only_material_light"-->
+        <!--android:layout_below="@+id/imageView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="51dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Manage your time in a smart way."-->
+        <!--android:id="@+id/intro"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/background_floating_material_dark"-->
+        <!--android:layout_below="@+id/welcometxt"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+</LinearLayout>

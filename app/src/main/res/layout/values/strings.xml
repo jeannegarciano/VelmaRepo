@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Velma</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="client_id">1035908077779-jo84euutautp1ts08pq17ck7oa8suced.apps.googleusercontent.com</string>
+    <string name="client_secret">3SqJspw4LndpBJyf5iNbFmol</string>
+    <string name="logout">Logout</string>
+
+    <string name="event_name">Event Name</string>
+    <string name="addevent">Title</string>
+    <string name="addlocation">Location</string>
+    <string name="submit_event">Save Event</string>
+    <string name="enter_startdate">Start Date</string>
+    <string name="enter_enddate">End Date</string>
+    <string name="enter_starttime">Start Time</string>
+    <string name="enter_endtime">End Time</string>
+    <string name="test_event">test event</string>
+    <string name="eventdesc">Description</string>Enter Event/string>
+    <string name="alarm_every">Alarm every ...</string>
+    <string name="welcome_text">Welcome to Velma</string>
+
+    <string name="action_today">Today</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_day_view">Day View</string>
+    <string name="action_three_day_view">3 Day View</string>
+    <string name="action_week_view">Week View</string>
+    <string name="action_monthly_view">Monthly View</string>
+    <string name="title_activity_basic">Basic Example</string>
+    <string name="title_activity_asynchronous">Asynchronous Events</string>
+    <string name="async_error">Could not download events from the internet</string>
+
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+     <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+
+    <string-array name="whale_array">
+        <item>Pick a whale sound!</item>
+        <item>Humpback bubble net</item>
+        <item>Humpback contact Call Moo</item>
+        <item>Humpback contact Call Whup</item>
+        <item>Humpback feeding Call</item>
+        <item>Humpback flipper splash</item>
+        <item>Humpback Tail slaps</item>
+        <item>Humpback whale song</item>
+        <item>Humpback whale song with outboard engine</item>
+        <item>Humpback wheeze blows</item>
+        <item>Killer whale echolocation clicks</item>
+        <item>Killer whale offshore</item>
+        <item>Killer whale resident</item>
+        <item>Killer whale transient</item>
+    </string-array>
+
+    <string name="invitation_title">Join my event</string>
+
+    <string-array name="mode_array">
+        <item>Driving</item>
+        <item>walking</item>
+        <item>bicycling</item>
+    </string-array>
+
+    <string name="title_activity_location">Location</string>
+</resources>
